@@ -1,0 +1,117 @@
+body{
+    background-image: url(Pictures/SL_123119_26540_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.songOrg{
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-left: 50%;
+    margin-bottom: 350px;
+    display: grid;
+    grid-template-rows: repeat(10, 12%);
+    align-items: flex-start;
+    justify-content: end;
+    grid-template-columns: 100%;
+}
+.songOrg > div{ /*only the direct children have this rules applied not the grandchilder*/
+    border: 5px solid;
+    border-image: linear-gradient(to right, #ff6347, #8a2be2);
+    border-image-slice: 1;
+    text-align: center;
+    display: inline-block;
+    /*background: linear-gradient(to bottom, rgb(227, 97, 192)80%,rgb(0, 0, 0));*/
+}
+.songOrg img{
+    float: left;
+    width: 10%;
+}
+.song1{
+    grid-area: 1/1;
+}
+.song2{
+    grid-area: 2/1;
+}
+.song3{
+    grid-area: 3/1;
+}
+.song4{
+    grid-area: 4/1;
+}
+.song5{
+    grid-area: 5/1;
+}
+.song6{
+    grid-area: 6/1;
+}
+.song7{
+    grid-area: 7/1;
+}
+.song8{
+    grid-area: 8/1;
+}
+.song9{
+    grid-area: 9/1;
+}
+.song10{
+    grid-area: 10/1;
+}
+.button{
+    background-size: cover;
+    outline: none;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: transparent;
+}
+.play{
+    background-image: url(Pictures/Play.png);
+}
+.pause{
+    background-image: url(Pictures/Pause.png);
+}
+.rewind{
+    background-image: url(Pictures/Rewind.png);
+}
+.seekbar{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+/*code below for the slider effects and transitions*/
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #3498db; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #2980b9; /* Thumb color on hover */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 20px;
+    background: #bdc3c7;
+    border-radius: 5px;
+}
